@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "link": "Links",
+    "team": "Team",
+    "faqs": "FAQs",
+    "contact": "Contact Us",
+    "learnMore": "Learn More"
+  },
+  "home": {
+    "headerTitle": "To Inspire, Encourage, Hold On.",
+    "headerBody": "Dasig is a non-profit and non-government organization founded on the compassion of friendship and the will to serve the people by offering relief or humanitarian assistance and spreading mental health awareness.",
+    "donateNow": "Donate Now"
+  }
+}
