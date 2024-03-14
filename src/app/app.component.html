@@ -1,5 +1,11 @@
 <div class="main-container">
-  <nav class="navbar navbar-expand navbar-light">
+  <nav
+    [ngClass]="
+      !isNavbarScrolled
+        ? 'navbar navbar-expand navbar-light'
+        : 'navbar navbar-expand navbar-light scrolled'
+    "
+  >
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <button
