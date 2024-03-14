@@ -1,14 +1,13 @@
 <div class="main-content">
-  <div class="card">
+  <div class="card home-container">
     <div class="card-body">
       <div class="container-fluid flex-container header">
         <div class="home-header text-left">
-          <h1>To Inspire, Encourage, Hold On.</h1>
+          <h1>
+            {{ currentLanguage.home.headerTitle }}
+          </h1>
           <h2>
-            Dasig is a non-profit and non-government organization founded on the
-            compassion of friendship and the will to serve the people by
-            offering relief or humanitarian assistance and spreading mental
-            health awareness.
+            {{ currentLanguage.home.headerBody }}
           </h2>
           <button
             type="button"
@@ -16,7 +15,7 @@
             data-bs-toggle="button"
             aria-pressed="true"
           >
-            Donate Now
+            {{ currentLanguage.home.donateNow }}
           </button>
         </div>
 
@@ -30,5 +29,27 @@
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="subheader">
+    <div class="text-center subheader-text">
+      <h3>
+        "Together, let's harness the power of compassion and solidarity to
+        create a brighter, more resilient future for all."
+      </h3>
+      <div class="horizontal-line"><div class="square"></div></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid flex-container header">
+          <div class="text-center">
+            <div class="text-center subheader-text">
+              <h4>ABOUT</h4>
+              <div class="horizontal-line"><div class="square"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

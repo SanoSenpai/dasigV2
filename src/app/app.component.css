@@ -1,7 +1,21 @@
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: #37517e;
   border: 0;
   height: 74px;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(
+    41,
+    60,
+    93,
+    0.95
+  ); /* Adjust the alpha value (0.5 in this case) to control the opacity */
+  transform: translateY(-5px);
 }
 
 .nav-link {
@@ -29,6 +43,16 @@
   padding-left: 20px;
   padding-right: 20px;
   border-color: #46b0e1;
+  color: white;
+  border-radius: 50px;
+  border-width: 2px;
+}
+
+.learn-more:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #46b0e1;
+  background-color: #46b0e1;
   color: white;
   border-radius: 50px;
   border-width: 2px;

@@ -7,7 +7,7 @@ import { SpinnerService } from '../shared/services/spinner.service';
 @Component({
   selector: 'dasig-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css', './home.component.about.css'],
 })
 export class HomeComponent {
   pageTitle = 'Home';

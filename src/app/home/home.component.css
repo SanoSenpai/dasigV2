@@ -1,5 +1,9 @@
 .card {
-  height: 700px;
+  border: 0;
+}
+
+.home-container {
+  height: 774px;
   border: 0;
   background-color: #37517e;
   border-radius: 0;
@@ -20,7 +24,7 @@
 
 .header {
   height: 50%;
-  margin-top: 120px;
+  margin-top: 194px;
 }
 
 .home-header {
@@ -39,6 +43,21 @@ h2 {
   font-size: 20px;
   margin-top: 10px;
   font-family: "Jost", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  color: #37517e;
 }
 
 @keyframes floating {
@@ -62,11 +81,6 @@ h2 {
   align-items: center;
 }
 
-.footer {
-  background-color: #f3f5fa;
-  height: 135px;
-}
-
 .donate-now {
   margin-top: 20pt;
   padding-left: 20px;
@@ -80,4 +94,48 @@ h2 {
   color: white;
   font-family: "Jost", sans-serif;
   font-weight: bold;
+}
+
+.donate-now:hover {
+  margin-top: 20pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #209dd8;
+  background-color: #209dd8;
+  border-radius: 50px;
+  border-width: 2px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+.subheader {
+  color: darkslategray;
+  background-color: #f3f5fa;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.horizontal-line {
+  border-top: 2px solid #dddddd;
+  margin: 0 auto;
+  width: 100pt; /* Adjust the width as needed */
+  margin-top: 25px;
+}
+
+.square {
+  width: 50px;
+  height: 5px;
+  background-color: #46b0e1;
+  margin: -3px auto;
+}
+
+.footer {
+  background-color: #f3f5fa;
+  height: 135px;
 }

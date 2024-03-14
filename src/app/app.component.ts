@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { LanguageService } from './shared/services/language.service';
 import { LanguageData } from './shared/services/language.interface';
 import { Subscription } from 'rxjs';
@@ -14,6 +14,7 @@ export class AppComponent implements OnInit, OnDestroy {
   currentLanguage!: LanguageData;
   sub!: Subscription;
   showSpinner!: boolean;
+  isNavbarScrolled: boolean = false;
 
   constructor(
     private _lang: LanguageService,
@@ -21,6 +22,12 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {
     _lang.currentLanguage = 'en-ph';
     this._spinner.showSpinner(true);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: any) {
+    // Check if the user has scrolled down by checking the vertical scroll position
+    this.isNavbarScrolled = window.pageYOffset > 0;
   }
 
   ngOnInit(): void {
