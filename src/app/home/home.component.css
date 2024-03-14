@@ -1,0 +1,58 @@
+.card {
+  height: 700px;
+  border: 0;
+  background-color: #37517e;
+  border-radius: 0;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 50%;
+  margin-top: 120px;
+}
+
+.home-header {
+  width: 35%;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-image {
+  animation: floating 3s ease-in-out infinite;
+}
