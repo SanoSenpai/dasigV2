@@ -25,9 +25,9 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: any) {
+  onWindowScroll() {
     // Check if the user has scrolled down by checking the vertical scroll position
-    this.isNavbarScrolled = window.pageYOffset > 0;
+    this.isNavbarScrolled = window.scrollY > 0;
   }
 
   ngOnInit(): void {

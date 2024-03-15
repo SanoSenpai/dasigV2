@@ -1,4 +1,6 @@
+<!-- Main Container for the Website -->
 <div class="main-container">
+  <!-- Navigation Bar -->
   <nav
     [ngClass]="
       !isNavbarScrolled
@@ -62,7 +64,9 @@
       </div>
     </div>
   </nav>
+  <!-- Content Routing -->
   <router-outlet></router-outlet>
 </div>
 
+<!-- Spinner -->
 <dasig-spinner [visibility]="showSpinner"></dasig-spinner>
