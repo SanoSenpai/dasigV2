@@ -1,0 +1,23 @@
+.link-section {
+  height: 600pt;
+  color: black;
+}
+
+.circle-headers {
+  background-color: #37517e;
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  border-radius: 75%;
+  margin-bottom: 2vw;
+  margin-left: 40pt;
+}
+
+.link-container {
+  height: 135px;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  margin-right: 5%;
+}

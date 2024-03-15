@@ -32,34 +32,6 @@
   color: white;
 }
 
-h1 {
-  font-size: 62pt;
-  font-weight: bolder;
-  margin-top: 10px;
-  font-family: "Jost", sans-serif;
-}
-
-h2 {
-  font-size: 20px;
-  margin-top: 10px;
-  font-family: "Jost", sans-serif;
-}
-
-h3 {
-  font-size: 20px;
-  margin-top: 10px;
-  font-family: "Jost", sans-serif;
-  font-style: italic;
-}
-
-h4 {
-  font-size: 32px;
-  font-weight: bolder;
-  margin-top: 10px;
-  font-family: "Jost", sans-serif;
-  color: #37517e;
-}
-
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -112,13 +84,33 @@ h4 {
 }
 
 .subheader {
-  color: darkslategray;
+  background-color: #f3f5fa;
+  height: 135px;
+  justify-content: left;
+  align-items: center;
+}
+
+.subheader-content {
   background-color: #f3f5fa;
   height: 135px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3vw;
+}
+
+.fb-logo {
+  width: 35px;
+  height: 35px;
+  padding-top: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.section-head {
+  height: 135px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
 }
 
 .horizontal-line {

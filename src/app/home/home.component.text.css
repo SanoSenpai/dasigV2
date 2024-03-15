@@ -1,0 +1,43 @@
+h1 {
+  font-size: 62pt;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20pt;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #37517e;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  color: #37517e;
+}
+
+h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #444444;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Open Sans" sans-serif;
+}
