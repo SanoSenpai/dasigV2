@@ -1,5 +1,5 @@
 .link-section {
-  height: 600pt;
+  height: 1000pt;
   color: black;
 }
 
@@ -20,4 +20,25 @@
   align-items: center;
   margin-top: 3vw;
   margin-right: 5%;
+}
+
+.button-style {
+  margin-top: 20pt;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #46b0e1;
+  background-color: #46b0e1;
+  border-radius: 50px;
+  border-width: 2px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+.button-style:hover {
+  border-color: #209dd8;
+  background-color: #209dd8;
 }
