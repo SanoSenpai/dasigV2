@@ -110,7 +110,7 @@
   height: 135px;
   justify-content: center;
   align-items: center;
-  margin-top: 3vw;
+  margin-top: 30vh;
 }
 
 .horizontal-line {
@@ -128,6 +128,6 @@
 }
 
 .footer {
-  background-color: #f3f5fa;
+  background-color: #37517e;
   height: 135px;
 }
