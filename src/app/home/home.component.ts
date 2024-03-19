@@ -11,6 +11,8 @@ import { SpinnerService } from '../shared/services/spinner.service';
     './home.component.css',
     './home.component.links.css',
     './home.component.text.css',
+    './home.component.team.css',
+    './home.component.faqs.css',
   ],
 })
 export class HomeComponent {

@@ -1,0 +1,41 @@
+.team-section-background {
+  width: 100%;
+  background-color: #f3f5fa;
+}
+
+.team-section {
+  height: 1300pt;
+  color: black;
+  background-color: #f3f5fa;
+}
+
+.team-container {
+  height: 250px;
+  width: 750px;
+  border-radius: 10px;
+  margin-right: 25px;
+  background-color: white;
+  transition: all 0.6s ease;
+}
+
+.team-container:hover {
+  transform: translateY(-5px);
+}
+
+.team-content-margin {
+  margin-top: 40px;
+}
+
+.team-content {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.team-description {
+  margin-left: 10px;
+}
+
+.team-flex-container {
+  display: flex;
+  flex-direction: row;
+}
