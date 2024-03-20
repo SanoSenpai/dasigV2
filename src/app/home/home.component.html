@@ -329,7 +329,8 @@
             <div
               *ngFor="let item of collapsingItems; let i = index"
               class="question-container"
-              [style.height]="item.isCollapsed ? '45px' : 'fit-content'"
+              [id]="'question_' + i"
+              [style.height]="item.isCollapsed ? '45px' : getCollapseHeight(i)"
             >
               <div class="question-flex" (click)="toggleCollapse(i)">
                 <i class="fa fa-question"></i>
