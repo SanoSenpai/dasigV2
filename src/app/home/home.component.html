@@ -191,7 +191,10 @@
         <div class="card-body">
           <div class="section-head text-center">
             <h4>MEET THE TEAM</h4>
-            <div class="horizontal-line"><div class="square"></div></div>
+            <div class="horizontal-line" style="margin-bottom: 25px">
+              <div class="square"></div>
+            </div>
+            <p>The team that made Dasig possible.</p>
           </div>
           <div class="flex-container team-content-margin">
             <div class="team-container">
@@ -318,38 +321,28 @@
           <div class="card-body">
             <div class="section-head text-center">
               <h4>FREQUENTLY ASKED QUESTIONS</h4>
-              <div class="horizontal-line"><div class="square"></div></div>
+              <div class="horizontal-line" style="margin-bottom: 25px">
+                <div class="square"></div>
+              </div>
+              <p>Things you might want to know beforehand.</p>
             </div>
-            <div class="text-left about-body">
-              <p>
-                Dasig is a Visayan word that means "to inspire, encourage, hold
-                on." It is something that everyone of us needs right now. In
-                these trying times, everyone is in constant battle, but with
-                this simple advocacy, we want our organization to be of help in
-                the simplest possible way.
-              </p>
-              <p>
-                With a fervent commitment to this simple yet powerful advocacy,
-                our organization seeks to extend a helping hand in the most
-                fundamental manner possible. We aspire to be agents of change,
-                catalysts for positivity, and providers of solace to those who
-                find themselves struggling amidst the chaos.
-              </p>
-              <p>
-                In our endeavor to make a tangible difference, we call upon the
-                generosity and compassion of our community. By joining hands and
-                pooling our resources, we can reach out to those who remain
-                unseen and unheard, offering them the support and assistance
-                they so desperately need.
-              </p>
-              <p>
-                We humbly appeal to your benevolence to aid us in our mission.
-                Your contributions, no matter how modest, will serve as a
-                lifeline for those who are yet to be reached. Every donation,
-                every act of kindness, is a testament to the indomitable spirit
-                of humanity. Together, let us sow the seeds of Dasig, nurturing
-                hope and resilience in the hearts of those who need it most.
-              </p>
+
+            <div
+              class="question-container"
+              [style.height.px]="isCollapsed ? 45 : 100"
+            >
+              <button class="question-flex" (click)="toggleCollapse()">
+                <i class="fa fa-question"></i>
+                <h3>Is this a non-profit organization?</h3>
+                <div class="chevron">
+                  <i
+                    [class]="
+                      isCollapsed ? 'fa fa-chevron-down' : 'fa fa-chevron-up'
+                    "
+                  ></i>
+                </div>
+              </button>
+              <p class="answer">Yes, all proceeds go towards charity.</p>
             </div>
           </div>
         </div>

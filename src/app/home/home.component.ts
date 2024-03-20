@@ -20,12 +20,16 @@ export class HomeComponent {
 
   currentLanguage!: LanguageData;
   sub!: Subscription;
-
+  isCollapsed = true;
   constructor(
     private _lang: LanguageService,
     private _spinner: SpinnerService
   ) {
     _lang.currentLanguage = 'en-ph';
+  }
+
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
   }
 
   ngOnInit(): void {
