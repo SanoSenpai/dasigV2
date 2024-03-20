@@ -20,7 +20,6 @@ export class HomeComponent {
 
   currentLanguage!: LanguageData;
   sub!: Subscription;
-  isCollapsed = true;
   constructor(
     private _lang: LanguageService,
     private _spinner: SpinnerService
@@ -28,8 +27,22 @@ export class HomeComponent {
     _lang.currentLanguage = 'en-ph';
   }
 
-  toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
+  collapsingItems = [
+    {
+      question: 'Is this a non-profit organization?',
+      answer: 'Yes, all proceeds go towards charity.',
+      isCollapsed: true,
+    },
+    {
+      question: 'I am near Bato Leyte, can I opt to meet for donation?',
+      answer: `If you opt to donate in-kind and you are near Bato Leyte, kindly drop it at the said locations:\n\n P. Burgos St. Brgy. Bagongbayan Bato, Leyte (in front of Bright Star Child Information Center)\n Contact Person: John Christopher Sulla (09176393542)\n\n Jose Rizal St. Brgy. Tinago, Bato, Leyte (in front of Bato School of Fisheries, adjacent to Axil Graphics)\n Contact Person: Trisha Suzanne Aguilar (09178780661)`,
+      isCollapsed: true,
+    },
+  ];
+
+  toggleCollapse(index: number) {
+    this.collapsingItems[index].isCollapsed =
+      !this.collapsingItems[index].isCollapsed;
   }
 
   ngOnInit(): void {

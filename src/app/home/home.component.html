@@ -326,23 +326,27 @@
               </div>
               <p>Things you might want to know beforehand.</p>
             </div>
-
             <div
+              *ngFor="let item of collapsingItems; let i = index"
               class="question-container"
-              [style.height.px]="isCollapsed ? 45 : 100"
+              [style.height]="item.isCollapsed ? '45px' : 'fit-content'"
             >
-              <button class="question-flex" (click)="toggleCollapse()">
+              <div class="question-flex" (click)="toggleCollapse(i)">
                 <i class="fa fa-question"></i>
-                <h3>Is this a non-profit organization?</h3>
+                <h3>{{ item.question }}</h3>
                 <div class="chevron">
                   <i
                     [class]="
-                      isCollapsed ? 'fa fa-chevron-down' : 'fa fa-chevron-up'
+                      item.isCollapsed
+                        ? 'fa fa-chevron-down'
+                        : 'fa fa-chevron-up'
                     "
                   ></i>
                 </div>
-              </button>
-              <p class="answer">Yes, all proceeds go towards charity.</p>
+              </div>
+              <p class="answer" style="white-space: pre-wrap">
+                {{ item.answer }}
+              </p>
             </div>
           </div>
         </div>
