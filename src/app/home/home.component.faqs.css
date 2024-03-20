@@ -3,3 +3,49 @@
   width: 100%;
   background-color: white;
 }
+
+.question-container {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f3f5fa;
+  transition: all 0.6s ease;
+  overflow: hidden;
+}
+
+.question-flex {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  background-color: transparent;
+}
+
+.question-icon {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #47b2e4;
+  border-radius: 50px;
+  color: #47b2e4;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.fa-question {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #47b2e4;
+  border-radius: 50px;
+  color: #47b2e4;
+  margin-left: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chevron {
+  margin-left: 530pt;
+  margin-top: 8px;
+  color: #37517e;
+}
+
+.answer {
+  margin-left: 55pt;
+}
