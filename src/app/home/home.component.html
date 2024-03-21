@@ -1,7 +1,7 @@
 <!-- The Whole Landing Page -->
 <div class="main-content" *ngIf="currentLanguage">
   <!-- Header -->
-  <div class="card home-container">
+  <div class="card home-container" id="home">
     <div class="card-body">
       <div class="container-fluid flex-container header">
         <div class="home-header text-left">
@@ -54,7 +54,7 @@
           <h4>ABOUT</h4>
           <div class="horizontal-line"><div class="square"></div></div>
         </div>
-        <div class="text-left about-body">
+        <div class="text-left about-body" id="about">
           <p>
             Dasig is a Visayan word that means "to inspire, encourage, hold on."
             It is something that everyone of us needs right now. In these trying
@@ -127,7 +127,7 @@
           </div>
           <div class="link-container">
             <div class="text-center">
-              <div class="circle-headers">
+              <div class="circle-headers" id="links">
                 <img
                   src="./assets/img/link-2.png"
                   class="img-responsive center-block"
@@ -196,7 +196,7 @@
             </div>
             <p>The team that made Dasig possible.</p>
           </div>
-          <div class="flex-container team-content-margin">
+          <div class="flex-container team-content-margin" id="team">
             <div class="team-container">
               <div class="team-content team-flex-container">
                 <img
@@ -315,7 +315,7 @@
     </div>
 
     <!-- FAQs Section -->
-    <div class="faqs-section-background">
+    <div class="faqs-section-background" id="faqs">
       <div class="container-fluid">
         <div class="card">
           <div class="card-body">
@@ -357,7 +357,21 @@
     <!-- Footer -->
     <div class="card home-container">
       <div class="card-body">
-        <div class="container-fluid footer"></div>
+        <div class="container-fluid footer">
+          <p>© Copyright Dasig. All Rights Reserved</p>
+          <p>
+            Our promise to protect the privacy and confidentiality of your
+            personal data. All personal data collected will be treated in
+            accordance to the requirements in Data Privacy Act of 2012. We
+            promise not to sell, share or swap your personal information with
+            any other company/organization. The information you provided will be
+            treated with utmost confidentiality, for the purpose of donation
+            administration, receipt issuing and communications about your
+            donation. Please refer to our Privacy Policy for more details.
+          </p>
+
+          <a src="">Privacy Policy</a>
+        </div>
       </div>
     </div>
   </div>
