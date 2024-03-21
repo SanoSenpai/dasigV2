@@ -70,7 +70,9 @@ export class HomeComponent {
         this.currentLanguage = data;
       },
     });
-    this._spinner.showSpinner(false);
+    setTimeout(() => {
+      this._spinner.showSpinner(false);
+    }, 1000);
   }
 
   ngOnDestroy(): void {
