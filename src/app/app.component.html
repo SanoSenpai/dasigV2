@@ -1,5 +1,9 @@
 <!-- Main Container for the Website -->
-<div class="main-container">
+
+<!-- Spinner -->
+<dasig-spinner [visibility]="showSpinner"></dasig-spinner>
+
+<div class="main-container" *ngIf="currentLanguage" [hidden]="showSpinner">
   <!-- Navigation Bar -->
   <nav
     [ngClass]="
@@ -67,6 +71,3 @@
   <!-- Content Routing -->
   <router-outlet></router-outlet>
 </div>
-
-<!-- Spinner -->
-<dasig-spinner [visibility]="showSpinner"></dasig-spinner>
