@@ -51,4 +51,18 @@ export class AppComponent implements OnInit, OnDestroy {
       this.sub.unsubscribe();
     }
   }
+
+  scrollToSection(options: {
+    sectionId: string;
+    scrollBlockType?: ScrollLogicalPosition;
+  }): void {
+    const { sectionId, scrollBlockType } = options;
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: scrollBlockType ?? 'center',
+      });
+    }
+  }
 }

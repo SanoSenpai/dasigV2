@@ -25,6 +25,10 @@
   color: white;
 }
 
+.nav-link:hover {
+  cursor: pointer;
+}
+
 .nav-item {
   padding-left: 10px;
   padding-right: 10px;

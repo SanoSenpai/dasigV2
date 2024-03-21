@@ -9,11 +9,11 @@ import { IFAQs } from './home.interface';
   selector: 'dasig-home',
   templateUrl: './home.component.html',
   styleUrls: [
-    './home.component.css',
-    './home.component.links.css',
-    './home.component.text.css',
-    './home.component.team.css',
-    './home.component.faqs.css',
+    './css/home.component.css',
+    './css/home.component.links.css',
+    './css/home.component.text.css',
+    './css/home.component.team.css',
+    './css/home.component.faqs.css',
   ],
 })
 export class HomeComponent {
