@@ -344,18 +344,69 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="card footer-container">
-      <div class="card-body">
-        <div class="container-fluid footer">
-          <p>
-            {{ currentLanguage.home.footerSection.footerCopyright }}
-          </p>
-          <p>
-            {{ currentLanguage.home.footerSection.footerPromise }}
-          </p>
+    <!-- Contact Us Section -->
+    <div class="contact-section-background">
+      <div class="container-fluid">
+        <div class="card contact-section">
+          <div class="card-body">
+            <div class="section-head text-center">
+              <h4>CONTACT US</h4>
+              <div class="horizontal-line" style="margin-bottom: 25px">
+                <div class="square"></div>
+              </div>
+            </div>
+            <div class="contact-container justify-content-center">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>
+                    Jose Rizal St. Brgy. Tinago, Bato, Leyte (in front of Bato
+                    School of Fisheries, adjacent to Axil Graphics)<br />
+                    Contact Person: Trisha Suzanne Aguilar
+                  </p>
+                </div>
 
-          <a src=""> {{ currentLanguage.home.footerSection.privacyPolicy }}</a>
+                <div class="email" id="contactUs">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>{{ "dasigdonationdrive@gmail.com" }}</p>
+                </div>
+
+                <div class="row">
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p>09178780661</p>
+                  </div>
+                  <iframe
+                    title="Google Map Frame"
+                    src="https://maps.google.com/maps?q=Bato%20School%20of%20Fisheries,%20Bato%20Leyte,%20Philippines&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    style="border: 0; width: 100%; height: 290px"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="card footer-container">
+        <div class="card-body">
+          <div class="container-fluid footer">
+            <p>
+              {{ currentLanguage.home.footerSection.footerCopyright }}
+            </p>
+            <p>
+              {{ currentLanguage.home.footerSection.footerPromise }}
+            </p>
+
+            <a src="">
+              {{ currentLanguage.home.footerSection.privacyPolicy }}</a
+            >
+          </div>
         </div>
       </div>
     </div>

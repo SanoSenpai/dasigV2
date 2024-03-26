@@ -14,6 +14,7 @@ import { IFAQs } from './home.interface';
     './css/home.component.text.css',
     './css/home.component.team.css',
     './css/home.component.faqs.css',
+    './css/home.component.contact.css',
   ],
 })
 export class HomeComponent {
