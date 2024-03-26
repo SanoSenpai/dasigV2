@@ -9,7 +9,7 @@
   background-color: #f3f5fa;
 }
 
-.team-container {
+.team-member-container {
   height: 250px;
   width: 750px;
   border-radius: 10px;
@@ -18,7 +18,7 @@
   transition: all 0.6s ease;
 }
 
-.team-container:hover {
+.team-member-container:hover {
   transform: translateY(-5px);
 }
 
