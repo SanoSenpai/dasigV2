@@ -1,7 +1,7 @@
 <!-- The Whole Landing Page -->
 <div class="main-content" *ngIf="currentLanguage">
   <!-- Header -->
-  <div class="card home-container" id="home">
+  <div class="card home-container section" id="home">
     <div class="card-body">
       <div class="container-fluid flex-container header">
         <div class="home-header text-left">
@@ -58,7 +58,7 @@
           </h4>
           <div class="horizontal-line"><div class="square"></div></div>
         </div>
-        <div class="text-left about-body" id="about">
+        <div class="text-left about-body section" id="about">
           <p>
             {{ currentLanguage.home.aboutSection.about1 }}
           </p>
@@ -123,7 +123,7 @@
                   alt=""
                 />
               </div>
-              <h5 id="links">
+              <h5 id="links" class="section">
                 {{ currentLanguage.home.linkSection.link[1].linkTitle }}
               </h5>
               <p>
@@ -184,7 +184,7 @@
             </div>
             <p>{{ currentLanguage.home.teamSection.teamSubtitle }}</p>
           </div>
-          <div class="flex-container team-content-margin" id="team">
+          <div class="flex-container team-content-margin section" id="team">
             <div class="team-container">
               <div class="team-content team-flex-container">
                 <img
@@ -303,7 +303,7 @@
     </div>
 
     <!-- FAQs Section -->
-    <div class="faqs-section-background" id="faqs">
+    <div class="faqs-section-background section" id="faqs">
       <div class="container-fluid">
         <div class="card">
           <div class="card-body">
@@ -367,7 +367,7 @@
                   </p>
                 </div>
 
-                <div class="email" id="contactUs">
+                <div class="email section" id="contactUs">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
                   <p>{{ "dasigdonationdrive@gmail.com" }}</p>

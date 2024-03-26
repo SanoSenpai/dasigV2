@@ -27,6 +27,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'home' ? 'color:#449ecf;' : null"
               (click)="
                 scrollToSection({
                   sectionId: 'home',
@@ -40,6 +41,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'about' ? 'color:#449ecf;' : null"
               (click)="scrollToSection({ sectionId: 'about' })"
             >
               {{ currentLanguage.navbar.about }}
@@ -49,6 +51,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'links' ? 'color:#449ecf;' : null"
               (click)="scrollToSection({ sectionId: 'links' })"
             >
               {{ currentLanguage.navbar.link }}
@@ -58,6 +61,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'team' ? 'color:#449ecf;' : null"
               (click)="scrollToSection({ sectionId: 'team' })"
             >
               {{ currentLanguage.navbar.team }}</a
@@ -67,6 +71,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'faqs' ? 'color:#449ecf;' : null"
               (click)="scrollToSection({ sectionId: 'faqs' })"
             >
               {{ currentLanguage.navbar.faqs }}
@@ -76,6 +81,7 @@
             <a
               class="nav-link"
               aria-current="page"
+              [style]="currentSection === 'contactUs' ? 'color:#449ecf;' : null"
               (click)="scrollToSection({ sectionId: 'contactUs' })"
             >
               {{ currentLanguage.navbar.contact }}
@@ -87,6 +93,7 @@
               class="btn active learn-more"
               data-bs-toggle="button"
               aria-pressed="true"
+              title="Visit Facebook page"
               src="https://web.facebook.com/dasigdonationdrive"
               onclick="window.open(this.getAttribute('src'), '_blank')"
             >
