@@ -27,6 +27,7 @@
 
 .nav-link:hover {
   cursor: pointer;
+  color: #449ecf;
 }
 
 .nav-item {

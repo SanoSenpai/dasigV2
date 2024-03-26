@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LanguageData } from '../shared/services/language.interface';
 import { LanguageService } from '../shared/services/language.service';
@@ -17,35 +17,16 @@ import { IFAQs } from './home.interface';
     './css/home.component.contact.css',
   ],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, OnDestroy {
   currentLanguage!: LanguageData;
   sub!: Subscription;
+  collapsingItems!: IFAQs[];
+
   constructor(
     private _lang: LanguageService,
     private _spinner: SpinnerService
   ) {
     _lang.currentLanguage = 'en-ph';
-  }
-
-  collapsingItems!: IFAQs[];
-
-  toggleCollapse(index: number) {
-    for (const items in this.collapsingItems) {
-      if (Number(items) !== index) {
-        this.collapsingItems[items].isCollapsed = true;
-      } else {
-        this.collapsingItems[index].isCollapsed =
-          !this.collapsingItems[index].isCollapsed;
-      }
-    }
-  }
-
-  getCollapseHeight(index: number): string {
-    const element = document.getElementById('question_' + index);
-    if (element) {
-      return `${element.scrollHeight}px`; // Return the scroll height of the element
-    }
-    return '82px'; // Return 0 if element is not found
   }
 
   ngOnInit(): void {
@@ -66,5 +47,24 @@ export class HomeComponent {
     if (this.sub) {
       this.sub.unsubscribe();
     }
+  }
+
+  toggleCollapse(index: number) {
+    for (const items in this.collapsingItems) {
+      if (Number(items) !== index) {
+        this.collapsingItems[items].isCollapsed = true;
+      } else {
+        this.collapsingItems[index].isCollapsed =
+          !this.collapsingItems[index].isCollapsed;
+      }
+    }
+  }
+
+  getCollapseHeight(index: number): string {
+    const element = document.getElementById('question_' + index);
+    if (element) {
+      return `${element.scrollHeight}px`; // Return the scroll height of the element
+    }
+    return '82px'; // Return 0 if element is not found
   }
 }
