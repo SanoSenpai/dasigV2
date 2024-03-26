@@ -9,6 +9,7 @@ import { LanguageService } from './shared/services/language.service';
 import { LanguageData } from './shared/services/language.interface';
 import { Subscription } from 'rxjs';
 import { SpinnerService } from './shared/services/spinner.service';
+import { MobileViewService } from './shared/services/mobile-view.service';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
   isNavbarScrolled: boolean = false;
   currentSection: string = 'home';
   sections!: Element[];
+  isMobileView: boolean = false;
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -41,30 +43,21 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(
     private _lang: LanguageService,
     private _spinner: SpinnerService,
-    private elementRef: ElementRef
+    private _mobileView: MobileViewService,
+    private _elementRef: ElementRef
   ) {
     _lang.currentLanguage = 'en-ph';
     this._spinner.showSpinner(true);
+    this._mobileView.checkScreenWidth();
   }
 
-  /*
-   * Check if the user has scrolled down by checking the vertical scroll position
-   */
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    /*
-     * Used for Navbar behavior (scroll)
-     */
     this.isNavbarScrolled = window.scrollY > 0;
-
-    /*
-     * Check if the user has scrolled down by checking the vertical scroll position
-     * Used for Navlinks behavior
-     */
     if (!this.sections) {
       // Get all sections
       this.sections =
-        this.elementRef.nativeElement.querySelectorAll('.section');
+        this._elementRef.nativeElement.querySelectorAll('.section');
     }
     // Observe each section
     this.sections.forEach((section: Element) => {
@@ -72,8 +65,16 @@ export class AppComponent implements OnInit, OnDestroy {
     });
   }
 
+  // Listen to window resize events to toggle nav links and bars visibility
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this._mobileView.checkScreenWidth();
+    this.isMobileView = this._mobileView.isMobileView;
+  }
+
   ngOnInit(): void {
     this.showSpinner = this._spinner.visibility;
+    this.isMobileView = this._mobileView.isMobileView;
     this.sub = this._lang.getLanguage().subscribe({
       next: (data) => {
         this.currentLanguage = data;
