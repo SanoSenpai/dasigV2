@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       complete: () => {
         setTimeout(() => {
           this._spinner.showSpinner(false);
-        }, 1000);
+        }, 100);
       },
     });
   }
