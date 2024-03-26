@@ -10,7 +10,6 @@ import { SpinnerService } from './shared/services/spinner.service';
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'DASIG';
   currentLanguage!: LanguageData;
   sub!: Subscription;
   showSpinner!: boolean;

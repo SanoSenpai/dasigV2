@@ -127,6 +127,13 @@
   margin: -3px auto;
 }
 
+.footer-container {
+  height: 300px;
+  border: 0;
+  background-color: #37517e;
+  border-radius: 0;
+}
+
 .footer {
   background-color: #37517e;
   height: 135px;

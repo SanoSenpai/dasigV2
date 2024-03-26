@@ -6,10 +6,10 @@
       <div class="container-fluid flex-container header">
         <div class="home-header text-left">
           <h1>
-            {{ currentLanguage.home.headerTitle }}
+            {{ currentLanguage.home.headerSection.headerTitle }}
           </h1>
           <h2>
-            {{ currentLanguage.home.headerBody }}
+            {{ currentLanguage.home.headerSection.headerBody }}
           </h2>
           <button
             type="button"
@@ -17,7 +17,7 @@
             data-bs-toggle="button"
             aria-pressed="true"
           >
-            {{ currentLanguage.home.donateNow }}
+            {{ currentLanguage.home.headerSection.donateNow }}
           </button>
         </div>
 
@@ -42,7 +42,9 @@
         style="max-height: 80px"
         alt=""
       />
-      <h3>Established by Alumni of Saint Teresa's School of Bato</h3>
+      <h3>
+        {{ currentLanguage.home.headerSection.subheader }}
+      </h3>
     </div>
   </div>
 
@@ -51,38 +53,23 @@
     <div class="card">
       <div class="card-body">
         <div class="section-head text-center">
-          <h4>ABOUT</h4>
+          <h4>
+            {{ currentLanguage.home.aboutSection.aboutTitle }}
+          </h4>
           <div class="horizontal-line"><div class="square"></div></div>
         </div>
         <div class="text-left about-body" id="about">
           <p>
-            Dasig is a Visayan word that means "to inspire, encourage, hold on."
-            It is something that everyone of us needs right now. In these trying
-            times, everyone is in constant battle, but with this simple
-            advocacy, we want our organization to be of help in the simplest
-            possible way.
+            {{ currentLanguage.home.aboutSection.about1 }}
           </p>
           <p>
-            With a fervent commitment to this simple yet powerful advocacy, our
-            organization seeks to extend a helping hand in the most fundamental
-            manner possible. We aspire to be agents of change, catalysts for
-            positivity, and providers of solace to those who find themselves
-            struggling amidst the chaos.
+            {{ currentLanguage.home.aboutSection.about2 }}
           </p>
           <p>
-            In our endeavor to make a tangible difference, we call upon the
-            generosity and compassion of our community. By joining hands and
-            pooling our resources, we can reach out to those who remain unseen
-            and unheard, offering them the support and assistance they so
-            desperately need.
+            {{ currentLanguage.home.aboutSection.about3 }}
           </p>
           <p>
-            We humbly appeal to your benevolence to aid us in our mission. Your
-            contributions, no matter how modest, will serve as a lifeline for
-            those who are yet to be reached. Every donation, every act of
-            kindness, is a testament to the indomitable spirit of humanity.
-            Together, let us sow the seeds of Dasig, nurturing hope and
-            resilience in the hearts of those who need it most.
+            {{ currentLanguage.home.aboutSection.about4 }}
           </p>
         </div>
       </div>
@@ -94,7 +81,9 @@
     <div class="card link-section">
       <div class="card-body">
         <div class="section-head text-center">
-          <h4>LINKS</h4>
+          <h4>
+            {{ currentLanguage.home.linkSection.linkTitle }}
+          </h4>
           <div class="horizontal-line"><div class="square"></div></div>
         </div>
         <div class="flex-container">
@@ -108,12 +97,11 @@
                   alt=""
                 />
               </div>
-              <h5>Here For You</h5>
+              <h5>
+                {{ currentLanguage.home.linkSection.link[0].linkTitle }}
+              </h5>
               <p>
-                If you are in need of food, hygiene kits, cash assistance, or
-                clothes it is our mission to support and assist. We will give
-                our best to cater your needs. We have a lot of good quality
-                clothes that has been donated by our generous donors.
+                {{ currentLanguage.home.linkSection.link[0].linkBody }}
               </p>
               <button
                 type="button"
@@ -121,7 +109,7 @@
                 data-bs-toggle="button"
                 aria-pressed="true"
               >
-                Message Us
+                {{ currentLanguage.home.linkSection.link[0].linkButton }}
               </button>
             </div>
           </div>
@@ -135,12 +123,11 @@
                   alt=""
                 />
               </div>
-              <h5 id="links">Volunteer With Us</h5>
+              <h5 id="links">
+                {{ currentLanguage.home.linkSection.link[1].linkTitle }}
+              </h5>
               <p>
-                Every December or whenever there is a big project, we need
-                volunteers that will help us distribute the goods, organize,
-                collect and deliver the donations. If you are interested to join
-                our team, please drop a message on our Facebook page.
+                {{ currentLanguage.home.linkSection.link[1].linkBody }}
               </p>
               <button
                 type="button"
@@ -148,7 +135,7 @@
                 data-bs-toggle="button"
                 aria-pressed="true"
               >
-                Join Us
+                {{ currentLanguage.home.linkSection.link[1].linkButton }}
               </button>
             </div>
           </div>
@@ -162,12 +149,11 @@
                   alt=""
                 />
               </div>
-              <h5>Fund Our Project</h5>
+              <h5>
+                {{ currentLanguage.home.linkSection.link[2].linkTitle }}
+              </h5>
               <p>
-                A monetary gift from you can save lives and help the most
-                vulnerable. Donations enable us to provide immediate assistance
-                to those people who are in need, securing financial aid with
-                every donation goes a long way.
+                {{ currentLanguage.home.linkSection.link[2].linkBody }}
               </p>
               <button
                 type="button"
@@ -175,7 +161,7 @@
                 data-bs-toggle="button"
                 aria-pressed="true"
               >
-                {{ currentLanguage.home.donateNow }}
+                {{ currentLanguage.home.linkSection.link[2].linkButton }}
               </button>
             </div>
           </div>
@@ -190,11 +176,13 @@
       <div class="card team-section">
         <div class="card-body">
           <div class="section-head text-center">
-            <h4>MEET THE TEAM</h4>
+            <h4>
+              {{ currentLanguage.home.teamSection.teamTitle }}
+            </h4>
             <div class="horizontal-line" style="margin-bottom: 25px">
               <div class="square"></div>
             </div>
-            <p>The team that made Dasig possible.</p>
+            <p>{{ currentLanguage.home.teamSection.teamSubtitle }}</p>
           </div>
           <div class="flex-container team-content-margin" id="team">
             <div class="team-container">
@@ -210,8 +198,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>Rica Ines Mercado</h6>
-                  <p>Co-founder and Overall Project Manager</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[0].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[0].position }}</p>
                 </div>
               </div>
             </div>
@@ -228,8 +216,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>Trisha Suzanne Aguilar</h6>
-                  <p>Co-founder and Finance Manager</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[1].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[1].position }}</p>
                 </div>
               </div>
             </div>
@@ -248,8 +236,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>John Christopher Sulla III</h6>
-                  <p>Co-Manager of Fundraising and Publicity</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[2].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[2].position }}</p>
                 </div>
               </div>
             </div>
@@ -266,8 +254,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>Kareen Ann Estorba</h6>
-                  <p>Co-Manager of Fundraising and Publicity</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[3].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[3].position }}</p>
                 </div>
               </div>
             </div>
@@ -286,8 +274,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>Hannah Aniciete</h6>
-                  <p>Co-Manager of Fundraising and Publicity</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[4].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[4].position }}</p>
                 </div>
               </div>
             </div>
@@ -304,8 +292,8 @@
                   alt=""
                 />
                 <div class="team-description">
-                  <h6>Sean Maverick Saligue</h6>
-                  <p>Co-founder and Finance Manager</p>
+                  <h6>{{ currentLanguage.home.teamSection.team[5].name }}</h6>
+                  <p>{{ currentLanguage.home.teamSection.team[5].position }}</p>
                 </div>
               </div>
             </div>
@@ -320,11 +308,13 @@
         <div class="card">
           <div class="card-body">
             <div class="section-head text-center">
-              <h4>FREQUENTLY ASKED QUESTIONS</h4>
+              <h4>
+                {{ currentLanguage.home.faqsSection.faqsTitle }}
+              </h4>
               <div class="horizontal-line" style="margin-bottom: 25px">
                 <div class="square"></div>
               </div>
-              <p>Things you might want to know beforehand.</p>
+              <p>{{ currentLanguage.home.faqsSection.faqsSubtitle }}</p>
             </div>
             <div
               *ngFor="let item of collapsingItems; let i = index"
@@ -355,22 +345,17 @@
     </div>
 
     <!-- Footer -->
-    <div class="card home-container">
+    <div class="card footer-container">
       <div class="card-body">
         <div class="container-fluid footer">
-          <p>© Copyright Dasig. All Rights Reserved</p>
           <p>
-            Our promise to protect the privacy and confidentiality of your
-            personal data. All personal data collected will be treated in
-            accordance to the requirements in Data Privacy Act of 2012. We
-            promise not to sell, share or swap your personal information with
-            any other company/organization. The information you provided will be
-            treated with utmost confidentiality, for the purpose of donation
-            administration, receipt issuing and communications about your
-            donation. Please refer to our Privacy Policy for more details.
+            {{ currentLanguage.home.footerSection.footerCopyright }}
+          </p>
+          <p>
+            {{ currentLanguage.home.footerSection.footerPromise }}
           </p>
 
-          <a src="">Privacy Policy</a>
+          <a src=""> {{ currentLanguage.home.footerSection.privacyPolicy }}</a>
         </div>
       </div>
     </div>
