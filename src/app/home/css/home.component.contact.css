@@ -1,0 +1,21 @@
+.contact-section-background {
+  height: 1300pt;
+  width: 100%;
+  background-color: #f3f5fa;
+}
+
+.contact-section {
+  height: 1300pt;
+  color: black;
+  background-color: #f3f5fa;
+}
+
+.contact-container {
+  padding-left: 50pt;
+  padding-right: 50pt;
+  padding-top: 20pt;
+  padding-bottom: 20pt;
+  color: black;
+  background-color: white;
+  border-radius: 5pt;
+}
