@@ -29,8 +29,14 @@ export class HomeComponent {
   collapsingItems!: IFAQs[];
 
   toggleCollapse(index: number) {
-    this.collapsingItems[index].isCollapsed =
-      !this.collapsingItems[index].isCollapsed;
+    for (const items in this.collapsingItems) {
+      if (Number(items) !== index) {
+        this.collapsingItems[items].isCollapsed = true;
+      } else {
+        this.collapsingItems[index].isCollapsed =
+          !this.collapsingItems[index].isCollapsed;
+      }
+    }
   }
 
   getCollapseHeight(index: number): string {
