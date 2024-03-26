@@ -20,6 +20,14 @@
   background-color: transparent;
 }
 
+.question-flex h3 {
+  font-size: 16px;
+  margin-top: 13px;
+  margin-left: 20pt;
+  font-family: "Poppins", sans-serif;
+  color: #37517e;
+}
+
 .question-flex:hover {
   cursor: pointer;
 }
@@ -35,14 +43,19 @@
 }
 
 .fa-question {
-  height: 25px;
-  width: 25px;
-  border: 3px solid #47b2e4;
-  border-radius: 50px;
-  color: #47b2e4;
-  margin-left: 25px;
   margin-top: 10px;
-  text-align: center;
+  font-size: 20px;
+  color: #47b2e4;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #47b2e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15pt;
 }
 
 .chevron {
@@ -54,6 +67,10 @@
 }
 
 .answer {
-  margin-left: 55pt;
   margin-right: 55pt;
+  font-size: 16px;
+  margin-top: 13px;
+  margin-left: 20pt;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }

@@ -54,30 +54,6 @@
   padding-top: 5px;
 }
 
-.info .social-links {
-  padding-left: 60px;
-}
-
-.info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.info .social-links a:hover {
-  background: #47b2e4;
-  color: #fff;
-}
-
 .info .email:hover i,
 .info .address:hover i,
 .info .phone:hover i {
