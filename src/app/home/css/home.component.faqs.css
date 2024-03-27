@@ -79,7 +79,7 @@
 /* Mobile View */
 @media screen and (max-width: 768px) {
   .faqs-section-background {
-    height: 1000pt;
+    height: 700pt;
     width: 100%;
     background-color: white;
   }
