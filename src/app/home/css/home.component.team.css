@@ -87,6 +87,6 @@
 
   .team-flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }

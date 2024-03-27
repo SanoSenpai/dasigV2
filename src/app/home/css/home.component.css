@@ -263,10 +263,12 @@
 
   .footer p {
     color: white;
+    font-size: 9px;
   }
 
   .footer a {
     color: white;
+    font-size: 9px;
   }
 }
 
