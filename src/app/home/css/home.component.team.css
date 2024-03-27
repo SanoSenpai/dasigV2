@@ -1,41 +1,92 @@
-.team-section-background {
-  width: 100%;
-  background-color: #f3f5fa;
+/* PC View */
+@media screen and (min-width: 768px) {
+  .team-section-background {
+    width: 100%;
+    background-color: #f3f5fa;
+  }
+
+  .team-section {
+    height: 1300pt;
+    color: black;
+    background-color: #f3f5fa;
+  }
+
+  .team-member-container {
+    height: 250px;
+    width: 750px;
+    border-radius: 10px;
+    margin-right: 25px;
+    background-color: white;
+    transition: all 0.6s ease;
+  }
+
+  .team-member-container:hover {
+    transform: translateY(-5px);
+  }
+
+  .team-content-margin {
+    margin-top: 25px;
+  }
+
+  .team-content {
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+
+  .team-description {
+    margin-left: 10px;
+  }
+
+  .team-flex-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.team-section {
-  height: 1300pt;
-  color: black;
-  background-color: #f3f5fa;
-}
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .team-section-background {
+    width: 100%;
+    background-color: #f3f5fa;
+  }
 
-.team-member-container {
-  height: 250px;
-  width: 750px;
-  border-radius: 10px;
-  margin-right: 25px;
-  background-color: white;
-  transition: all 0.6s ease;
-}
+  .team-section {
+    height: 1700pt;
+    color: black;
+    background-color: #f3f5fa;
+  }
 
-.team-member-container:hover {
-  transform: translateY(-5px);
-}
+  .team-member-container {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-color: white;
+    transition: all 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.team-content-margin {
-  margin-top: 25px;
-}
+  .team-member-container:hover {
+    transform: translateY(-5px);
+  }
 
-.team-content {
-  margin-left: 50px;
-  margin-top: 40px;
-}
+  .team-content-margin {
+    margin-top: 25px;
+  }
 
-.team-description {
-  margin-left: 10px;
-}
+  .team-content {
+    margin-top: 40px;
+  }
 
-.team-flex-container {
-  display: flex;
-  flex-direction: row;
+  .team-description {
+    margin-left: 10px;
+  }
+
+  .team-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

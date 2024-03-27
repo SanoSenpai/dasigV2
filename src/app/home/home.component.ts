@@ -1,9 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LanguageData } from '../shared/services/language.interface';
 import { LanguageService } from '../shared/services/language.service';
 import { SpinnerService } from '../shared/services/spinner.service';
 import { IFAQs } from './home.interface';
+import { MobileViewService } from '../shared/services/mobile-view.service';
 
 @Component({
   selector: 'dasig-home',
@@ -21,15 +22,25 @@ export class HomeComponent implements OnInit, OnDestroy {
   currentLanguage!: LanguageData;
   sub!: Subscription;
   collapsingItems!: IFAQs[];
+  isMobileView: boolean = false;
 
   constructor(
     private _lang: LanguageService,
-    private _spinner: SpinnerService
+    private _spinner: SpinnerService,
+    private _mobileView: MobileViewService
   ) {
     _lang.currentLanguage = 'en-ph';
+    this._mobileView.checkScreenWidth();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this._mobileView.checkScreenWidth();
+    this.isMobileView = this._mobileView.isMobileView;
   }
 
   ngOnInit(): void {
+    this.isMobileView = this._mobileView.isMobileView;
     this.sub = this._lang.getLanguage().subscribe({
       next: (data) => {
         this.currentLanguage = data;

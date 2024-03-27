@@ -1,44 +1,109 @@
-.link-section {
-  height: 1000pt;
-  color: black;
+/* PC View */
+@media screen and (min-width: 768px) {
+  .link-section {
+    height: 1000pt;
+    color: black;
+  }
+
+  .circle-headers {
+    background-color: #37517e;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 75%;
+    margin-bottom: 50px;
+    margin-left: 40pt;
+  }
+
+  .circle-headers img {
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  .link-container {
+    height: 135px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  .button-style {
+    margin-top: 20pt;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #46b0e1;
+    background-color: #46b0e1;
+    border-radius: 50px;
+    border-width: 2px;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+  }
+
+  .button-style:hover {
+    border-color: #209dd8;
+    color: white;
+    background-color: #209dd8;
+  }
 }
 
-.circle-headers {
-  background-color: #37517e;
-  height: 200px;
-  width: 200px;
-  padding: 50px;
-  border-radius: 75%;
-  margin-bottom: 2vw;
-  margin-left: 40pt;
-}
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .link-section {
+    height: 1800pt;
+    color: black;
+  }
 
-.link-container {
-  height: 135px;
-  width: 25%;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5%;
-}
+  .circle-headers {
+    background-color: #37517e;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 75%;
+    margin-bottom: 50px;
+  }
 
-.button-style {
-  margin-top: 20pt;
-  width: 150px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-color: #46b0e1;
-  background-color: #46b0e1;
-  border-radius: 50px;
-  border-width: 2px;
-  color: white;
-  font-family: "Jost", sans-serif;
-  font-weight: bold;
-}
+  .circle-headers img {
+    max-height: 100px;
+    max-width: 100px;
+  }
 
-.button-style:hover {
-  border-color: #209dd8;
-  color: white;
-  background-color: #209dd8;
+  .link-container {
+    height: 600px;
+    width: 100%;
+  }
+
+  .link-container .text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .button-style {
+    margin-top: 20pt;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #46b0e1;
+    background-color: #46b0e1;
+    border-radius: 50px;
+    border-width: 2px;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+  }
+
+  .button-style:hover {
+    border-color: #209dd8;
+    color: white;
+    background-color: #209dd8;
+  }
 }

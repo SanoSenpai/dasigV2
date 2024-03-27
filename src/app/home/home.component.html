@@ -3,8 +3,14 @@
   <!-- Header -->
   <div class="card home-container section" id="home">
     <div class="card-body">
-      <div class="container-fluid flex-container header">
-        <div class="home-header text-left">
+      <div
+        [ngClass]="
+          !isMobileView
+            ? 'container-fluid flex-container header'
+            : 'container-fluid header'
+        "
+      >
+        <div class="home-header text-left" *ngIf="!isMobileView">
           <h1>
             {{ currentLanguage.home.headerSection.headerTitle }}
           </h1>
@@ -25,9 +31,24 @@
           <img
             src="./assets/img/dasig.png"
             class="img-responsive center-block floating-image"
-            style="max-height: 600px"
             alt=""
           />
+        </div>
+        <div class="home-header text-left" *ngIf="isMobileView">
+          <h1>
+            {{ currentLanguage.home.headerSection.headerTitle }}
+          </h1>
+          <h2>
+            {{ currentLanguage.home.headerSection.headerBody }}
+          </h2>
+          <button
+            type="button"
+            class="btn donate-now"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            {{ currentLanguage.home.headerSection.donateNow }}
+          </button>
         </div>
       </div>
     </div>
@@ -93,7 +114,6 @@
                 <img
                   src="./assets/img/link-1.png"
                   class="img-responsive center-block"
-                  style="max-height: 100px; max-width: 100px"
                   alt=""
                 />
               </div>
@@ -119,7 +139,6 @@
                 <img
                   src="./assets/img/link-2.png"
                   class="img-responsive center-block"
-                  style="max-height: 100px; max-width: 100px"
                   alt=""
                 />
               </div>
@@ -145,7 +164,6 @@
                 <img
                   src="./assets/img/link-3.png"
                   class="img-responsive center-block"
-                  style="max-height: 100px; max-width: 100px"
                   alt=""
                 />
               </div>
