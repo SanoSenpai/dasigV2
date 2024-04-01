@@ -1,17 +1,18 @@
 <!-- Spinner -->
 <dasig-spinner [visibility]="showSpinner"></dasig-spinner>
 
+<!-- Dasig Nav Modal -->
+<dasig-nav-modal
+  *ngIf="currentLanguage"
+  [visibility]="showNavMenu"
+  [currentSection]="currentSection"
+  [showNavMenu]="showNavMenu"
+  [currentLanguage]="currentLanguage"
+  (showNavMenuEvent)="onEventClickMenu($event)"
+></dasig-nav-modal>
+
 <!-- Main Container for the Website -->
 <div class="main-container" *ngIf="currentLanguage" [hidden]="showSpinner">
-  <!-- Dasig Nav Modal -->
-  <dasig-nav-modal
-    [visibility]="showNavMenu"
-    [currentSection]="currentSection"
-    [showNavMenu]="showNavMenu"
-    [currentLanguage]="currentLanguage"
-    (showNavMenuEvent)="onEventClickMenu($event)"
-  ></dasig-nav-modal>
-
   <!-- Navigation Bar -->
   <nav
     [ngClass]="
