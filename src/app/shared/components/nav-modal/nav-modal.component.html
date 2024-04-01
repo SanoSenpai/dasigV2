@@ -1,0 +1,100 @@
+<div class="nav-modal" *ngIf="visibility" (click)="onClickNavMenu()">
+  <div
+    class="modal"
+    tabindex="-1"
+    [style]="visibility ? 'display:block' : 'display:none'"
+  >
+    <div class="container-fluid">
+      <button class="modal-header" (click)="onClickNavMenu()">
+        <i class="fa fa-close"></i>
+      </button>
+    </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="currentSection === 'home' ? 'color:#449ecf;' : null"
+                (click)="
+                  scrollToSection({
+                    sectionId: 'home',
+                    scrollBlockType: 'start'
+                  })
+                "
+                >{{ currentLanguage.navbar.home }}</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="currentSection === 'about' ? 'color:#449ecf;' : null"
+                (click)="scrollToSection({ sectionId: 'about' })"
+              >
+                {{ currentLanguage.navbar.about }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="currentSection === 'links' ? 'color:#449ecf;' : null"
+                (click)="scrollToSection({ sectionId: 'links' })"
+              >
+                {{ currentLanguage.navbar.link }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="currentSection === 'team' ? 'color:#449ecf;' : null"
+                (click)="scrollToSection({ sectionId: 'team' })"
+              >
+                {{ currentLanguage.navbar.team }}</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="currentSection === 'faqs' ? 'color:#449ecf;' : null"
+                (click)="scrollToSection({ sectionId: 'faqs' })"
+              >
+                {{ currentLanguage.navbar.faqs }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [style]="
+                  currentSection === 'contactUs' ? 'color:#449ecf;' : null
+                "
+                (click)="scrollToSection({ sectionId: 'contactUs' })"
+              >
+                {{ currentLanguage.navbar.contact }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn active learn-more"
+                data-bs-toggle="button"
+                aria-pressed="true"
+                title="Visit Facebook page"
+                src="https://web.facebook.com/dasigdonationdrive"
+                onclick="window.open(this.getAttribute('src'), '_blank')"
+              >
+                {{ currentLanguage.navbar.learnMore }}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
