@@ -20,6 +20,8 @@ export class AppComponent implements OnInit, OnDestroy {
   currentLanguage!: LanguageData;
   sub!: Subscription;
   showSpinner!: boolean;
+  // showNavMenu!: boolean;
+  showNavMenu = false;
   isNavbarScrolled: boolean = false;
   currentSection: string = 'home';
   sections!: Element[];
@@ -107,5 +109,13 @@ export class AppComponent implements OnInit, OnDestroy {
         block: scrollBlockType ?? 'center',
       });
     }
+  }
+
+  onClickNavMenu(): void {
+    this.showNavMenu = !this.showNavMenu;
+  }
+
+  onEventClickMenu(message: string): void {
+    this.showNavMenu = message === 'true';
   }
 }
