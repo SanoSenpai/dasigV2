@@ -5,11 +5,11 @@ import {
   OnDestroy,
   OnInit,
 } from '@angular/core';
-import { LanguageService } from './shared/services/language.service';
-import { LanguageData } from './shared/services/language.interface';
+import { LanguageService } from './shared/services/language/language.service';
+import { LanguageData } from './shared/services/language/language.interface';
 import { Subscription } from 'rxjs';
-import { SpinnerService } from './shared/services/spinner.service';
-import { MobileViewService } from './shared/services/mobile-view.service';
+import { SpinnerService } from './shared/services/spinner/spinner.service';
+import { MobileViewService } from './shared/services/mobile-view/mobile-view.service';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +20,6 @@ export class AppComponent implements OnInit, OnDestroy {
   currentLanguage!: LanguageData;
   sub!: Subscription;
   showSpinner!: boolean;
-  // showNavMenu!: boolean;
   showNavMenu = false;
   isNavbarScrolled: boolean = false;
   currentSection: string = 'home';

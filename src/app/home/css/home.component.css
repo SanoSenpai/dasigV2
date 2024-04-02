@@ -1,5 +1,5 @@
 /* PC View */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .card {
     border: 0;
   }
@@ -8,6 +8,7 @@
     border: 0;
     background-color: #37517e;
     border-radius: 0;
+    display: flex;
   }
 
   .main-content {
@@ -135,7 +136,7 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .card {
     border: 0;
   }

@@ -1,10 +1,10 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { LanguageData } from '../shared/services/language.interface';
-import { LanguageService } from '../shared/services/language.service';
-import { SpinnerService } from '../shared/services/spinner.service';
+import { LanguageData } from '../shared/services/language/language.interface';
+import { LanguageService } from '../shared/services/language/language.service';
+import { SpinnerService } from '../shared/services/spinner/spinner.service';
 import { IFAQs } from './home.interface';
-import { MobileViewService } from '../shared/services/mobile-view.service';
+import { MobileViewService } from '../shared/services/mobile-view/mobile-view.service';
 
 @Component({
   selector: 'dasig-home',
@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   sub!: Subscription;
   collapsingItems!: IFAQs[];
   isMobileView: boolean = false;
+  showDonateModal = false;
 
   constructor(
     private _lang: LanguageService,
@@ -77,5 +78,13 @@ export class HomeComponent implements OnInit, OnDestroy {
       return `${element.scrollHeight}px`; // Return the scroll height of the element
     }
     return '82px'; // Return 0 if element is not found
+  }
+
+  onClickDonateModal(): void {
+    this.showDonateModal = !this.showDonateModal;
+  }
+
+  onEventDonateModal(message: string): void {
+    this.showDonateModal = message === 'true';
   }
 }

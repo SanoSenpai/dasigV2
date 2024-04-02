@@ -1,0 +1,18 @@
+<div class="donate-modal" *ngIf="visibility" (click)="onClickNavMenu()">
+  <div
+    class="modal"
+    tabindex="-1"
+    [style]="visibility ? 'display:block' : 'display:none'"
+  >
+    <div class="container-fluid">
+      <button class="modal-header" (click)="onClickNavMenu()">
+        <i class="fa fa-close"></i>
+      </button>
+    </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LanguageData } from '../../services/language.interface';
+import { LanguageData } from '../../services/language/language.interface';
 import { Subscription } from 'rxjs';
 
 @Component({
