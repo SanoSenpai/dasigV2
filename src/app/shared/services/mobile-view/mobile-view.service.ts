@@ -1,4 +1,4 @@
-import { HostListener, Injectable, Input } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +12,6 @@ export class MobileViewService {
   }
   // Function to check screen width and toggle nav links visibility
   checkScreenWidth() {
-    this._isMobileView = window.innerWidth < 768; // Adjust breakpoint as needed
+    this._isMobileView = window.innerWidth < 1200; // Adjust breakpoint as needed
   }
 }

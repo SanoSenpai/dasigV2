@@ -1,3 +1,12 @@
+<!-- Dasig Donate Now Modal -->
+<dasig-donate-modal
+  *ngIf="currentLanguage"
+  [currentLanguage]="currentLanguage"
+  [visibility]="showDonateModal"
+  [showDonateModal]="showDonateModal"
+  (showDonateModalEvent)="onEventDonateModal($event)"
+></dasig-donate-modal>
+
 <!-- The Whole Landing Page -->
 <div class="main-content" *ngIf="currentLanguage">
   <!-- Header -->
@@ -20,8 +29,7 @@
           <button
             type="button"
             class="btn donate-now"
-            data-bs-toggle="button"
-            aria-pressed="true"
+            (click)="onClickDonateModal()"
           >
             {{ currentLanguage.home.headerSection.donateNow }}
           </button>
@@ -44,8 +52,7 @@
           <button
             type="button"
             class="btn donate-now"
-            data-bs-toggle="button"
-            aria-pressed="true"
+            (click)="onClickDonateModal()"
           >
             {{ currentLanguage.home.headerSection.donateNow }}
           </button>

@@ -1,0 +1,30 @@
+.modal {
+  z-index: 10;
+}
+.modal-header {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+}
+.fa-close {
+  color: white;
+  border: none;
+}
+.container-fluid {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.donate-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  background-color: rgba(60, 76, 106, 0.95);
+}

@@ -1,9 +1,9 @@
 <!-- Spinner -->
 <dasig-spinner [visibility]="showSpinner"></dasig-spinner>
 
-<!-- Dasig Nav Modal -->
+<!-- Dasig Nav Modal (For Mobile) -->
 <dasig-nav-modal
-  *ngIf="currentLanguage"
+  *ngIf="currentLanguage && isMobileView"
   [visibility]="showNavMenu"
   [currentSection]="currentSection"
   [showNavMenu]="showNavMenu"
