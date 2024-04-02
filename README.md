@@ -10,8 +10,5 @@ To generate a new component, directive, pipe, service, class, guard, interface, 
 ## Build
 To build the project, run npm run build. The build artifacts will be stored in the dist/ directory.
 
-## Running unit tests
-To execute unit tests, run npm test. This will run the unit tests via Karma.
-
 ## Further help
 For more help on the Angular CLI, you can use ng help or visit the Angular CLI Overview and Command Reference page.
