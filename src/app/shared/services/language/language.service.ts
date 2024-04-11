@@ -7,8 +7,8 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class LanguageService {
-  _currentLanguage!: string;
-  _languageData!: LanguageData;
+  private _currentLanguage!: string;
+  private _languageData!: LanguageData;
 
   get language(): LanguageData {
     return this._languageData;
