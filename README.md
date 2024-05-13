@@ -1,6 +1,9 @@
 # Dasig
 This project is a browser-based Angular application.
 
+## Requirements
+Ensure you have Node.js installed on your system, then proceed to run npm install. This command will fetch and install all necessary packages for the project.
+
 ## Development server
 To start the development server, run npm start. This will launch the application in your default web browser at http://localhost:4200/. The application will automatically reload if you make any changes to the source files.
 
