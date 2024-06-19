@@ -55,19 +55,19 @@
 
 @media screen and (max-width: 1200px) {
   h1 {
-    font-size: 32pt;
+    font-size: 62pt;
     font-weight: bolder;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
   }
   h2 {
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
   }
 
   h3 {
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 10px;
     margin-left: 20pt;
     font-family: "Jost", sans-serif;
@@ -76,7 +76,7 @@
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 32px;
     font-weight: bolder;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
@@ -84,7 +84,7 @@
   }
 
   h5 {
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
     font-weight: bold;
@@ -92,14 +92,14 @@
   }
 
   h6 {
-    font-size: 10px;
+    font-size: 20px;
     font-family: "Jost", sans-serif;
     font-weight: bold;
     color: #37517e;
   }
 
   p {
-    font-size: 9px;
+    font-size: 16px;
     margin-top: 10px;
     font-family: "Open Sans", sans-serif;
     color: #444444;

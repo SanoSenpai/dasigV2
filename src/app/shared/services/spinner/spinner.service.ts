@@ -5,7 +5,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class SpinnerService {
-  @Input() _visibility = false;
+  @Input() private _visibility = false;
   visibilityChanged: Subject<boolean> = new Subject<boolean>();
 
   get visibility(): boolean {
