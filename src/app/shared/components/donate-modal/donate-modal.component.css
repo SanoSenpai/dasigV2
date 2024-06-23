@@ -6,6 +6,18 @@
   border: none;
   padding: 0;
 }
+.modal-dialog {
+  .modal-content {
+    .modal-body {
+      width: fit-content;
+      background-color: rgba(255, 255, 255, 0);
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .fa-close {
   color: white;
   border: none;

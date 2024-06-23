@@ -1,5 +1,5 @@
 /* PC View */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1370px) {
   .faqs-section-background {
     height: 1000pt;
     width: 100%;
@@ -77,11 +77,16 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
   .faqs-section-background {
-    height: 700pt;
+    height: auto;
     width: 100%;
     background-color: white;
+  }
+
+  .questions {
+    margin-top: 60px;
+    height: 600pt;
   }
 
   .question-container {
@@ -96,14 +101,16 @@
   .question-flex {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     border: 0;
     background-color: transparent;
   }
 
   .question-flex h3 {
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 17px;
-    margin-left: 10pt;
+    margin-left: 10px;
     font-family: "Poppins", sans-serif;
     color: #37517e;
   }
@@ -118,24 +125,23 @@
     border: 3px solid #47b2e4;
     border-radius: 50px;
     color: #47b2e4;
-    margin-left: 25px;
     margin-top: 10px;
   }
 
   .fa-question {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 12px;
     color: #47b2e4;
     float: left;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     border: 2px solid #47b2e4;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 100px;
     transition: all 0.3s ease-in-out;
-    margin-left: 15pt;
+    margin-left: 10px;
   }
 
   .chevron {
@@ -148,7 +154,7 @@
 
   .answer {
     margin-right: 55pt;
-    font-size: 9px;
+    font-size: 16px;
     margin-top: 13px;
     margin-left: 20pt;
   }

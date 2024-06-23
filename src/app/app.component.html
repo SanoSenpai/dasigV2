@@ -24,8 +24,13 @@
     <div class="container-fluid">
       <button
         class="navbar-brand"
-        routerLink="/welcome"
         [style.marginRight.px]="5"
+        (click)="
+                scrollToSection({
+                  sectionId: 'home',
+                  scrollBlockType: 'start'
+                })
+              "
       >
         {{ currentLanguage.navbar.brand }}
       </button>

@@ -74,7 +74,7 @@
 }
 
 /* PC View */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1370px) {
   .container-fluid {
     width: 900pt;
     align-items: center;
@@ -82,7 +82,7 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
   .container-fluid {
     align-items: center;
   }

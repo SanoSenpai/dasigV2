@@ -49,6 +49,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       },
       complete: () => {
         setTimeout(() => {
+          this.collapsingItems[0].isCollapsed = false;
           this._spinner.showSpinner(false);
         }, 100);
       },
