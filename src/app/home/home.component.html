@@ -135,6 +135,9 @@
                 class="btn button-style"
                 data-bs-toggle="button"
                 aria-pressed="true"
+                title="Visit Facebook page"
+                src="https://web.facebook.com/dasigdonationdrive"
+                onclick="window.open(this.getAttribute('src'), '_blank')"
               >
                 {{ currentLanguage.home.linkSection.link[0].linkButton }}
               </button>
@@ -160,6 +163,9 @@
                 class="btn button-style"
                 data-bs-toggle="button"
                 aria-pressed="true"
+                title="Visit Facebook page"
+                src="https://web.facebook.com/dasigdonationdrive"
+                onclick="window.open(this.getAttribute('src'), '_blank')"
               >
                 {{ currentLanguage.home.linkSection.link[1].linkButton }}
               </button>
@@ -185,6 +191,7 @@
                 class="btn button-style"
                 data-bs-toggle="button"
                 aria-pressed="true"
+                (click)="onClickDonateModal()"
               >
                 {{ currentLanguage.home.linkSection.link[2].linkButton }}
               </button>
@@ -341,28 +348,32 @@
               </div>
               <p>{{ currentLanguage.home.faqsSection.faqsSubtitle }}</p>
             </div>
-            <div
-              *ngFor="let item of collapsingItems; let i = index"
-              class="question-container"
-              [id]="'question_' + i"
-              [style.height]="item.isCollapsed ? '45px' : getCollapseHeight(i)"
-            >
-              <div class="question-flex" (click)="toggleCollapse(i)">
-                <i class="fa fa-question"></i>
-                <h3>{{ item.question }}</h3>
-                <div class="chevron">
-                  <i
-                    [class]="
-                      item.isCollapsed
-                        ? 'fa fa-chevron-down'
-                        : 'fa fa-chevron-up'
-                    "
-                  ></i>
+            <div class="questions">
+              <div
+                *ngFor="let item of collapsingItems; let i = index"
+                class="question-container"
+                [id]="'question_' + i"
+                [style.height]="
+                  item.isCollapsed ? '45px' : getCollapseHeight(i)
+                "
+              >
+                <div class="question-flex" (click)="toggleCollapse(i)">
+                  <i class="fa fa-question"></i>
+                  <h3>{{ item.question }}</h3>
+                  <div class="chevron">
+                    <i
+                      [class]="
+                        item.isCollapsed
+                          ? 'fa fa-chevron-down'
+                          : 'fa fa-chevron-up'
+                      "
+                    ></i>
+                  </div>
                 </div>
+                <p class="answer" style="white-space: pre-wrap">
+                  {{ item.answer }}
+                </p>
               </div>
-              <p class="answer" style="white-space: pre-wrap">
-                {{ item.answer }}
-              </p>
             </div>
           </div>
         </div>

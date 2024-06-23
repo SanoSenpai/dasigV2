@@ -1,6 +1,6 @@
 /* Default text style */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1370px) {
   h1 {
     font-size: 62pt;
     font-weight: bolder;
@@ -53,15 +53,15 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
   h1 {
-    font-size: 62pt;
+    font-size: 32px;
     font-weight: bolder;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
   }
   h2 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
   }

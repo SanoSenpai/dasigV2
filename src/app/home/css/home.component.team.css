@@ -1,5 +1,5 @@
 /* PC View */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1370px) {
   .team-section-background {
     width: 100%;
     background-color: #f3f5fa;
@@ -44,7 +44,7 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
   .team-section-background {
     width: 100%;
     background-color: #f3f5fa;

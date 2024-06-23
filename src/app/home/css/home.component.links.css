@@ -1,5 +1,5 @@
 /* PC View */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1370px) {
   .link-section {
     height: 1000pt;
     color: black;
@@ -52,7 +52,7 @@
 }
 
 /* Mobile View */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
   .link-section {
     height: 1800pt;
     color: black;
