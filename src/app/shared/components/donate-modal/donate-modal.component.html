@@ -1,4 +1,4 @@
-<div class="donate-modal" *ngIf="visibility" (click)="onClickNavMenu()">
+<div class="donate-modal" [hidden]="!visibility" (click)="onClickNavMenu()">
   <div
     class="modal"
     tabindex="-1"

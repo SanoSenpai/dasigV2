@@ -85,7 +85,7 @@ export class AppComponent implements OnInit, OnDestroy {
       (visibility: boolean) => {
         setTimeout(() => {
           this.showSpinner = visibility;
-        }, 0);
+        }, 2000);
       }
     );
   }
