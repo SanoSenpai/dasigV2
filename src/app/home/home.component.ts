@@ -26,15 +26,15 @@ export class HomeComponent implements OnInit, OnDestroy {
   showDonateModal = false;
 
   constructor(
-    private _lang: LanguageService,
-    private _spinner: SpinnerService,
-    private _mobileView: MobileViewService
+    private readonly _lang: LanguageService,
+    private readonly _spinner: SpinnerService,
+    private readonly _mobileView: MobileViewService
   ) {
     _lang.currentLanguage = 'en-ph';
     this._mobileView.checkScreenWidth();
   }
 
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize')
   onResize() {
     this._mobileView.checkScreenWidth();
     this.isMobileView = this._mobileView.isMobileView;
@@ -64,11 +64,11 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   toggleCollapse(index: number) {
     for (const items in this.collapsingItems) {
-      if (Number(items) !== index) {
-        this.collapsingItems[items].isCollapsed = true;
-      } else {
+      if (Number(items) === index) {
         this.collapsingItems[index].isCollapsed =
           !this.collapsingItems[index].isCollapsed;
+      } else {
+        this.collapsingItems[items].isCollapsed = true;
       }
     }
   }

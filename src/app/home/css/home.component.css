@@ -32,7 +32,7 @@
     color: white;
   }
   .floating-image {
-    animation: floating 3s ease infinite;
+    animation: floating 3s ease infinite !important;
     max-height: 600px;
   }
   .container-fluid {
