@@ -31,10 +31,7 @@
     width: 50%;
     color: white;
   }
-  .floating-image {
-    animation: floating 3s ease infinite !important;
-    max-height: 600px;
-  }
+
   .container-fluid {
     width: 900pt;
     align-items: center;
@@ -272,14 +269,10 @@
   }
 }
 
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.floating-image {
+  animation-name: floatingAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  max-height: 600px;
 }
