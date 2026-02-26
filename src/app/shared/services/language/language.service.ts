@@ -18,7 +18,7 @@ export class LanguageService {
     this._currentLanguage = language ?? 'en-ph';
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   getLanguage(): Observable<LanguageData> {
     return this.http
@@ -26,7 +26,7 @@ export class LanguageService {
       .pipe(
         tap((data) => {
           this._languageData = data;
-        })
+        }),
       );
   }
 }

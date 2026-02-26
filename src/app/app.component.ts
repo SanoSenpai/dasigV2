@@ -38,21 +38,21 @@ export class AppComponent implements OnInit, OnDestroy {
       root: null,
       rootMargin: '0px',
       threshold: 0.5,
-    }
+    },
   );
 
   constructor(
-    private _lang: LanguageService,
-    private _spinner: SpinnerService,
-    private _mobileView: MobileViewService,
-    private _elementRef: ElementRef
+    private readonly _lang: LanguageService,
+    private readonly _spinner: SpinnerService,
+    private readonly _mobileView: MobileViewService,
+    private readonly _elementRef: ElementRef,
   ) {
     _lang.currentLanguage = 'en-ph';
     this._spinner.showSpinner(true);
     this._mobileView.checkScreenWidth();
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   onWindowScroll() {
     this.isNavbarScrolled = window.scrollY > 0;
     if (!this.sections) {
@@ -67,7 +67,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   // Listen to window resize events to toggle nav links and bars visibility
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize')
   onResize() {
     this._mobileView.checkScreenWidth();
     this.isMobileView = this._mobileView.isMobileView;
@@ -86,7 +86,7 @@ export class AppComponent implements OnInit, OnDestroy {
         setTimeout(() => {
           this.showSpinner = visibility;
         }, 2000);
-      }
+      },
     );
   }
 
