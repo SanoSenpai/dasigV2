@@ -21,7 +21,7 @@
                 (click)="
                   scrollToSection({
                     sectionId: 'home',
-                    scrollBlockType: 'start'
+                    scrollBlockType: 'start',
                   })
                 "
                 >{{ currentLanguage.navbar.home }}</a
@@ -41,8 +41,13 @@
               <a
                 class="nav-link"
                 aria-current="page"
-                [style]="currentSection === 'links' ? 'color:#449ecf;' : null"
-                (click)="scrollToSection({ sectionId: 'links' })"
+                [style]="
+                  currentSection === 'linksSection' ||
+                  currentSection === 'linksAnchor'
+                    ? 'color:#449ecf;'
+                    : null
+                "
+                (click)="scrollToSection({ sectionId: 'linksAnchor' })"
               >
                 {{ currentLanguage.navbar.link }}
               </a>
