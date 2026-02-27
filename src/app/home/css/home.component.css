@@ -32,6 +32,14 @@
     color: white;
   }
 
+  .floating-image {
+    animation-name: floatingAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    max-height: 600px;
+  }
+
   .container-fluid {
     width: 900pt;
     align-items: center;
@@ -148,10 +156,15 @@
     justify-content: center;
     align-items: center;
   }
+
   .floating-image {
-    animation: floating 3s ease-in-out infinite;
+    animation-name: floatingAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
     max-height: 300px;
   }
+  
   .container-fluid {
     width: 100%;
     align-items: center;
@@ -267,12 +280,4 @@
   .footer a {
     color: white;
   }
-}
-
-.floating-image {
-  animation-name: floatingAnimation;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  max-height: 600px;
 }
