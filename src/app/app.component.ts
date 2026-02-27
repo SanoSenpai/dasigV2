@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.target.id) {
           // If the section is in view, set it as the current section
           this.currentSection = entry.target.id;
         }
