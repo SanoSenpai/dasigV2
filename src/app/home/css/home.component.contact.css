@@ -19,13 +19,13 @@
     padding-bottom: 20pt;
     color: black;
     background-color: white;
-    border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
+    border-top: 3px solid #3D5A38;
+    border-bottom: 3px solid #3D5A38;
   }
 
   .info i {
     font-size: 20px;
-    color: #47b2e4;
+    color: #3D5A38;
     float: left;
     width: 44px;
     height: 44px;
@@ -42,14 +42,14 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #37517e;
+    color: #2E4623;
   }
 
   .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #6182ba;
+    color: #444444;
   }
 
   .info .email p {
@@ -59,7 +59,7 @@
   .info .email:hover i,
   .info .address:hover i,
   .info .phone:hover i {
-    background: #47b2e4;
+    background: #3D5A38;
     color: #fff;
   }
 }
@@ -85,13 +85,13 @@
     padding-bottom: 20pt;
     color: black;
     background-color: white;
-    border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
+    border-top: 3px solid #3D5A38;
+    border-bottom: 3px solid #3D5A38;
   }
 
   .info i {
     font-size: 20px;
-    color: #47b2e4;
+    color: #3D5A38;
     float: left;
     width: 44px;
     height: 44px;
@@ -108,14 +108,14 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #37517e;
+    color: #2E4623;
   }
 
   .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #6182ba;
+    color: #444444;
   }
 
   .info .email p {
@@ -125,7 +125,7 @@
   .info .email:hover i,
   .info .address:hover i,
   .info .phone:hover i {
-    background: #47b2e4;
+    background: #3D5A38;
     color: #fff;
   }
 }

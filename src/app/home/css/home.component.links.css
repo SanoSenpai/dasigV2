@@ -6,7 +6,7 @@
   }
 
   .circle-headers {
-    background-color: #37517e;
+    background-color: #2E4623;
     height: 200px;
     width: 200px;
     padding: 50px;
@@ -35,8 +35,8 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: #46b0e1;
-    background-color: #46b0e1;
+    border-color: #476e3c;
+    background-color: #476e3c;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -45,9 +45,9 @@
   }
 
   .button-style:hover {
-    border-color: #209dd8;
+    border-color: #3D5A35;
     color: white;
-    background-color: #209dd8;
+    background-color: #3D5A35;
   }
 }
 
@@ -59,7 +59,7 @@
   }
 
   .circle-headers {
-    background-color: #37517e;
+    background-color: #2E4623;
     height: 200px;
     width: 200px;
     padding: 50px;
@@ -92,8 +92,8 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: #46b0e1;
-    background-color: #46b0e1;
+    border-color: #476e3c;
+    background-color: #476e3c;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -102,9 +102,9 @@
   }
 
   .button-style:hover {
-    border-color: #209dd8;
+    border-color: #3D5A35;
     color: white;
-    background-color: #209dd8;
+    background-color: #3D5A35;
   }
 }
 
