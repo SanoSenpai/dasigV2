@@ -6,7 +6,7 @@
   .home-container {
     height: 774px;
     border: 0;
-    background-color: #37517e;
+    background-color: #2E4623;
     border-radius: 0;
     display: flex;
   }
@@ -51,8 +51,8 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: #46b0e1;
-    background-color: #46b0e1;
+    border-color: #476e3c;
+    background-color: #476e3c;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -66,8 +66,8 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: #209dd8;
-    background-color: #209dd8;
+    border-color: #3D5A35;
+    background-color: #3D5A35;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -115,19 +115,19 @@
   .square {
     width: 50px;
     height: 5px;
-    background-color: #46b0e1;
+    background-color: #476e3c;
     margin: -3px auto;
   }
 
   .footer-container {
     height: 300px;
     border: 0;
-    background-color: #37517e;
+    background-color: #2E4623;
     border-radius: 0;
   }
 
   .footer {
-    background-color: #37517e;
+    background-color: #2E4623;
     height: 135px;
   }
 
@@ -148,7 +148,7 @@
   .home-container {
     height: 100%;
     border: 0;
-    background-color: #37517e;
+    background-color: #2E4623;
     border-radius: 0;
   }
   .flex-container {
@@ -193,8 +193,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 24px;
-    border-color: #46b0e1;
-    background-color: #46b0e1;
+    border-color: #476e3c;
+    background-color: #476e3c;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -208,8 +208,8 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: #209dd8;
-    background-color: #209dd8;
+    border-color: #3D5A35;
+    background-color: #3D5A35;
     border-radius: 50px;
     border-width: 2px;
     color: white;
@@ -257,19 +257,19 @@
   .square {
     width: 50px;
     height: 5px;
-    background-color: #46b0e1;
+    background-color: #476e3c;
     margin: -3px auto;
   }
 
   .footer-container {
     height: 600px;
     border: 0;
-    background-color: #37517e;
+    background-color: #2E4623;
     border-radius: 0;
   }
 
   .footer {
-    background-color: #37517e;
+    background-color: #2E4623;
     height: 135px;
   }
 
